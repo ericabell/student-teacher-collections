@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 public class Main {
 
@@ -53,6 +50,12 @@ public class Main {
         // print out the map values in a for loop using values()
         for( HashSet s : classes.values() ) {
             System.out.println(s);
+        }
+
+        // EXTRAS:
+        // print out the map keys in a for loop using keySet()
+        for( Map.Entry<Teacher, HashSet<Student>> t : classes.entrySet() ) {
+            System.out.println(t);
         }
     }
 }
